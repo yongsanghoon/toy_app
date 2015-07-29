@@ -59,6 +59,7 @@ GEM
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    io-console (0.4.2)
     jbuilder (2.2.3)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -112,6 +113,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+      json (~> 1.4)
     sass (3.4.16)
     sass-rails (5.0.2)
       railties (>= 4.0.0, < 5.0)
@@ -153,6 +155,7 @@ PLATFORMS
 DEPENDENCIES
   byebug (= 3.4.0)
   coffee-rails (= 4.1.0)
+  io-console
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   pg (= 0.17.1)
@@ -165,3 +168,6 @@ DEPENDENCIES
   turbolinks (= 2.3.0)
   uglifier (= 2.5.3)
   web-console (= 2.0.0.beta3)
+
+BUNDLED WITH
+   1.10.6

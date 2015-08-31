@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
-  get 'static_pages/help'
-  get 'static_pages/about'
-  get 'static_pages/contact'
+  #get 'static_pages/help'
+  #get 'static_pages/about'
+  #get 'static_pages/contact'
+  get 'help' => 'static_pages#help'         #routes the URL /help --> 'help' action in the static_pages controller. Now you can access www.example.com/help instead of .../static_pages/help
+  get 'about' => 'static_pages#about'
+  get 'contact' => 'static_pages#contact'
 
   resources :microposts
   resources :users

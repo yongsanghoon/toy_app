@@ -12,18 +12,7 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>         <!-- link_to is the function, "Home" is the text, '#' is where the named routes go -->
-            <li><%= link_to "Help",   '#' %></li>         <!-- Processed: <li><a href="#">Help</a></li> -->
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Moved to _header.html.erb partial file -->
     <div class="container">
       <%= yield %>                                        <!-- yield method inserts the contents of each page into the site layout -->
     </div>

@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   #get 'static_pages/help'
   #get 'static_pages/about'
   #get 'static_pages/contact'
-  get 'help' => 'static_pages#help'         #routes the URL /help --> 'help' action in the static_pages controller. Now you can access www.example.com/help instead of .../static_pages/help
+  get 'help' => 'static_pages#help'         # Routes the URL /help --> 'help' action in the static_pages controller. Now you can access www.example.com/help instead of .../static_pages/help
+                                            # Creates two named routes:
+                                              # help_path -> '/help'
+                                              # help_url -> 'http://www.example.com/help'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
 

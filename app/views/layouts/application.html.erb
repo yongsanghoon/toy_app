@@ -12,11 +12,9 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Header code moved to _header.html.erb partial file -->
-    <%= render '_header.html.erb' %>
+    <!-- Moved to _header.html.erb partial file -->
     <div class="container">
       <%= yield %>                                        <!-- yield method inserts the contents of each page into the site layout -->
     </div>
-    <%= render '_footer.html.erb' %>
   </body>
 </html>

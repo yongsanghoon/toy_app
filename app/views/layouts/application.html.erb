@@ -14,7 +14,9 @@
   <body>
     <!-- Moved to _header.html.erb partial file -->
     <div class="container">
+      <%= render "layouts/header" %>
       <%= yield %>                                        <!-- yield method inserts the contents of each page into the site layout -->
+      <%= render "layouts/footer" %>
     </div>
   </body>
 </html>

@@ -1,9 +1,11 @@
 namespace :main do
-  desc "Remove test file called 'jacob-test.txt'"
+  desc "Check to see if app directory exists'"
 
   task :check_dir do
-    puts "Directory to check: "
-    @dir = STDIN.gets.strip     # STDIN = ask user for input
+    #puts "Directory to check: "
+    #@dir = STDIN.gets.strip     # STDIN = ask user for input
+    #if File.directory?("#{@dir}")
+    @dir = "app"
     if File.directory?("#{@dir}")
       puts "Directory exists!"
       cleanup_remove_dir
@@ -13,8 +15,9 @@ namespace :main do
   end
 
   task :cleanup => :check_dir do
-      puts "Cleaning up..."
-      puts "Deleting "
+      #puts "Cleaning up..."
+      #puts "Deleting "
+      puts "Finished!"
   end
 end
 
